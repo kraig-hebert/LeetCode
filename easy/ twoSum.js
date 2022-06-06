@@ -1,17 +1,6 @@
-const nums = [3, 14, 88, 6];
-const target = 20;
-
-var twoSum = (nums, target) => {
-  for (let i = 0; i < nums.length; i++) {
-    for (let e = i + 1; e < nums.length; e++) {
-      if (nums[i] + nums[e] === target) return [i, e];
-    }
-  }
-};
-
-console.log(twoSum(nums, target));
-
 /* 
+1. Two Sum
+
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
@@ -42,3 +31,16 @@ Constraints:
 -109 <= target <= 109
 Only one valid answer exists.
 */
+
+const nums = [3, 14, 88, 6];
+const target = 20;
+
+var twoSum = (nums, target) => {
+  for (let i = 0; i < nums.length; i++) {
+    for (let e = i + 1; e < nums.length; e++) {
+      if (nums[i] + nums[e] === target) return [i, e];
+    }
+  }
+};
+
+console.log(twoSum(nums, target));
